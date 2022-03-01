@@ -1,5 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'morhetz/gruvbox'
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
 call plug#end()
 
 set nocompatible            " disable compatibility to old-time vi
@@ -29,3 +31,5 @@ set background=light
 let g:gruvbox_italic='1'
 let g:gruvbox_constrast_light='medium'
 colorscheme gruvbox
+
+lua require'gnvaca'
